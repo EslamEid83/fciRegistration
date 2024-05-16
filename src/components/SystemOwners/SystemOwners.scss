@@ -1,0 +1,35 @@
+.adminsTable{
+    gap: 1rem;
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+        tr:nth-child(even){
+            background-color: #f1f7f8;
+        }
+        th,td{
+            border: 1px solid #a0c8cf;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        th{
+            background-color: #194668;
+            color: #fff;
+        }
+        td{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .tdAcion{
+            display: flex;
+            font-size: 24px;
+            justify-content: space-around;
+            align-items: center;
+            .deleteIcon{
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+}

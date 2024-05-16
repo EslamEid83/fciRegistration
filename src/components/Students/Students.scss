@@ -1,0 +1,75 @@
+.allStudents{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    h1{
+        color: #194668;
+        font-weight: bold;
+    }
+    .tableOfCourses{
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+        tr:nth-child(even){
+            background-color: #f1f7f8;
+        }
+        th,td{
+            border: 1px solid #a0c8cf;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        th{
+            background-color: #194668;
+            color: #fff;
+        }
+        td{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .icon{
+            width: 2rem;
+            height: 2rem;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+        } 
+    }
+    .levels{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 20%;
+            height: 7vh;
+            background-color: #194668;
+            color:white;
+            border: 0;
+            border-radius: 10px;
+            &:hover{
+                background-color: #2c2d30;
+            }
+        }
+    }
+    // input{
+    //     width: 100%;
+    //     border-radius: 10px;
+    //     border: 1px solid #00000063;
+    //     padding: 0.8rem;
+    // }
+    .btn{
+            width: 50%;
+            height: 6vh;
+            background-color: #194668;
+            color:white;
+            border: 0;
+            border-radius: 10px;
+            &:hover{
+                background-color: #2c2d30;
+            }
+    }
+}

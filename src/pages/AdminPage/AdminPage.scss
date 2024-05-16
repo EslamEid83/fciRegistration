@@ -1,0 +1,42 @@
+#adminPage {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+  .sideBar_AdminWorkingArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 88vh;
+}
+}
+  @media screen and (min-width: 100px) {
+    /* font at xs */
+    html {
+      font-size: 10px !important;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* font at sm */
+    html {
+      font-size: 12px !important;
+    }
+  }
+  
+  @media screen and (min-width: 991px) {
+    /* font at md */
+    html {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* font at lg */
+    html {
+      font-size: 16px !important;
+    }
+  }

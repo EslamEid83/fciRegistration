@@ -1,0 +1,54 @@
+.studentInfoPage{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    color: #194668;
+    font-weight: bold;
+    h1,h3{
+        font-weight: bold;
+    }
+    .std{
+        font-size: 6rem;
+    }
+    .StdInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        border-radius: 12px;
+        padding: 1rem;
+        gap: 2rem;
+        
+        .stdInfo_Img{
+            width: 50%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            img{
+                width: 35%;
+                height: 25vh;
+                border-radius: 10px;
+            }
+        }
+        .stdInfo_Info{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 2rem;
+
+            .name_id_level,
+            .gpa_hours{
+                gap: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+    }
+}

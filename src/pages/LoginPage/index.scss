@@ -1,0 +1,197 @@
+#LoginPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 15rem; */
+  /* background-color: #c2c6c7; */
+  justify-content: center;
+  align-items: center;
+  }
+  #formSection {
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    color: white;
+    display: flex;
+    height: 68vh;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    border-right: 35px solid #194668;
+    justify-content: space-between;
+    h1 {
+      text-align: center;
+      color: #194668 !important;
+      font-weight: bold;
+    }
+    .inputField {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: flex-start;
+      align-items: flex-start;
+      label {
+        color: #c2c6c7;;
+        padding: 0.6rem 0;
+      }
+      input {
+        background-color: #c2c6c747;
+        color: black;
+        padding: 1rem;
+        border: 0;
+        outline: 0;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+      span {
+        display: none;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        opacity: 0.9;
+      }
+    }
+    // .users{
+    //   display: flex;
+    //   input{
+    //     width: 10%;
+    //   }
+    //   label{
+    //     color: #6e7274;
+    //   }
+    // }
+    .loginBtn{
+      background-color: #194668;
+      color: white;
+      padding: 1rem;
+      border: 0;
+      outline: 0;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      &:hover{
+        background-color: #2c2d30;
+        color: white;
+    }
+    }
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 320px) {
+    /* font at xs */
+    // html {
+    //   font-size: 10px !important;
+    // }
+    .form {
+      width: 90%;
+      height: 35vh;
+      .loginBtn{
+        font-size: 1.3rem;
+      }
+    }
+  }
+    @media screen and (min-width: 320px) {
+    /* font at xs */
+    // html {
+    //   font-size: 10px !important;
+    // }
+    .form {
+      width: 90%;
+      height: 45vh;
+    }
+  }
+  @media screen and (min-width: 470px) {
+    /* font at xs */
+    // html {
+    //   font-size: 10px !important;
+    // }
+    .form {
+      width: 65%;
+      height: 45vh;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form {
+      width: 50%;
+      height: 55vh;
+      .inputField {
+        label {
+          padding: 1rem 0;
+        }
+        input {
+          padding: 2rem;
+        }
+      }
+      .loginBtn{
+        font-size: 1.3rem;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 991px) {
+      .form {
+        width: 40%;
+        height: 60vh;
+        h1 {
+          text-align: center;
+          color: #194668 !important;
+          font-weight: bold;
+        }
+        .inputField {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          justify-content: flex-start;
+          align-items: flex-start;
+          label {
+            color: #c2c6c7;;
+            padding: 0.6rem 0;
+          }
+          input {
+            background-color: #c2c6c747;
+            color: black;
+            padding: 1rem;
+            border: 0;
+            outline: 0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+          }
+        }
+        .loginBtn{
+          background-color: #194668;
+          color: white;
+          padding: 1rem;
+          border: 0;
+          outline: 0;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+          &:hover{
+            background-color: #2c2d30;
+            color: white;
+        }
+        }
+      }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* font at lg */
+    // html {
+    //   font-size: 16px !important;
+    // }
+  }

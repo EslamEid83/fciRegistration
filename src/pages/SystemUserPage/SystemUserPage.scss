@@ -1,0 +1,15 @@
+.systemUserPage{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .sideBar_MainWorkingArea{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 88vh;
+        overflow: hidden
+    }
+}

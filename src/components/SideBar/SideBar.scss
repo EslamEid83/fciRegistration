@@ -1,0 +1,172 @@
+.sideBar{
+    display: flex;
+    border-right: 1px solid #cbc9cb;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    // position: fixed;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+    overflow: hidden;
+    .sideBarElements{
+        color: black;
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        .activeTab{
+            background-color: #bbb8bb;
+            color: black;
+                text-decoration: none;
+                height: 8vh;
+                padding: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 1px 1px 10px 1px #cbc9c9;
+        }
+            .navLinkElement{
+                color: black;
+                text-decoration: none;
+                height: 8vh;
+                padding: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 1px 1px 10px 1px #cbc9c9;
+                &:hover{
+                    background-color: #cbc9cb;
+                    // border-radius: 10px;
+                    transition: all ease 0.1s;
+                }
+                // &:hover{
+                //     background-color: #194668;
+                //     color: white;
+                //     transition: all ease 0.1s;
+                //     .adminsIcon{
+                //         color: #cbc9cb;
+                //     }
+                
+                .adminsIcon{
+                    color: #183153;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .sideBar{
+            width: 50%;
+            left: -100%;
+            display: none;
+            .sideBarElements{
+                font-size: 13px;
+                padding: 12px;
+            }
+        }
+      }
+        @media screen and (min-width: 320px) {
+            .sideBar{
+                width: 50%;
+                left: -100%;
+                display: none;
+                .sideBarElements{
+                    font-size: 13px;
+                    padding: 12px;
+                }
+            }
+      }
+      @media screen and (min-width: 470px) {
+        .sideBar{
+            width: 50%;
+            left: -100%;
+            display: none;
+            .sideBarElements{
+                font-size: 16px;
+                padding: 14px;
+            }
+        }
+        
+      }
+      
+      @media screen and (min-width: 768px) {
+        .sideBar{
+            width: 25%;
+            .sideBarElements{
+                font-size: 16px;
+                padding: 15px;
+            }
+        }
+      }
+      
+      @media screen and (min-width: 991px) {
+        .sideBar{
+            display: flex;
+            border-right: 1px solid #cbc9cb;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            .sideBarElements{
+                color: black;
+                font-size: 20px;
+                display: block;
+                padding: 20px;
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+                align-content: flex-start;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                .activeTab{
+                    background-color: #bbb8bb;
+                    color: black;
+                        text-decoration: none;
+                        height: 8vh;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 1rem;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        box-shadow: 1px 1px 10px 1px #cbc9c9;
+                }
+                    .navLinkElement{
+                        color: black;
+                        text-decoration: none;
+                        height: 8vh;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 1rem;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        box-shadow: 1px 1px 10px 1px #cbc9c9;
+                    }
+                }
+            }
+      }
+      
+      @media screen and (min-width: 1200px) {
+        /* font at lg */
+        // html {
+        //   font-size: 16px !important;
+        // }
+      }

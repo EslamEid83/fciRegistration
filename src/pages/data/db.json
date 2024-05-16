@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "name": "Dr Hassan",
+      "username": "drhassan",
+      "password": "drh123",
+      "role": "System Owner",
+      "id": 1,
+      "stdGrade": "Active",
+      "status": "Active"
+    },
+    {
+      "name": "Eng Mahmoud",
+      "username": "engmahmoud",
+      "password": "mahmoud369",
+      "role": "Admin",
+      "id": 2
+    },
+    {
+      "name": "Ahmed Fawzy",
+      "username": "engfawzy",
+      "password": "fawzy999",
+      "role": "Doctor",
+      "id": 7
+    },
+    {
+      "name": "Ahmed Rabie",
+      "username": "AhmedRabie",
+      "password": "ah456",
+      "role": "Student",
+      "id": 3,
+      "img": "../../assets/std.png",
+      "levelId": 4,
+      "department": "CS",
+      "hours": 18,
+      "gpa": 2.3,
+      "stdGrade": "20",
+      "photoUrl": "assets/std.png",
+      "listOfRegCourses": [
+        {
+          "id": 1,
+          "courseName": "Programming Language 1",
+          "courseHours": "3",
+          "courseLevel": "1",
+          "courseCode": "Th121",
+          "status": "Not Active",
+          "courseDepartment": "CS",
+          "PreRequisteNumber1": "Null",
+          "PreRequisteNumber2": "Null",
+          "PreRequisteNumber3": "Null"
+        }
+      ]
+    },
+    {
+      "name": "Eslam Eid",
+      "username": "eslam123",
+      "password": "es123",
+      "role": "Student",
+      "id": 4,
+      "img": "../../assets/std.png",
+      "levelId": 1,
+      "department": "CS",
+      "hours": 18,
+      "gpa": 2.3,
+      "stdGrade": "30",
+      "listOfRegCourses": []
+    },
+    {
+      "name": "Dr mina",
+      "username": "drmina",
+      "password": "mina369",
+      "role": "System Owner",
+      "id": 8
+    }
+  ],
+  "Courses": [
+    {
+      "id": 1,
+      "courseName": "Programming Language 1",
+      "courseHours": "3",
+      "courseLevel": "1",
+      "courseCode": "Th121",
+      "status": "Active",
+      "courseDepartment": "CS",
+      "PreRequisteNumber1": "Null",
+      "PreRequisteNumber2": "Null",
+      "PreRequisteNumber3": "Null"
+    },
+    {
+      "id": 2,
+      "courseName": "Programming Language 2",
+      "courseHours": "3",
+      "courseLevel": "1",
+      "courseCode": "Th121",
+      "status": "Active",
+      "courseDepartment": "CS",
+      "PreRequisteNumber1": "Programming Language 1",
+      "PreRequisteNumber2": "Null",
+      "PreRequisteNumber3": "Null"
+    },
+    {
+      "id": 3,
+      "courseName": "Artificial Intelligence",
+      "courseHours": "3",
+      "courseLevel": "1",
+      "courseCode": "Th121",
+      "status": "Not Active",
+      "courseDepartment": "CS",
+      "PreRequisteNumber1": "Math 1",
+      "PreRequisteNumber2": "Math 2",
+      "PreRequisteNumber3": "Math 3"
+    },
+    {
+      "id": 4,
+      "courseName": "Theary of compution",
+      "courseHours": "3",
+      "courseLevel": "4",
+      "courseCode": "Th121",
+      "status": "Active",
+      "courseDepartment": "CS",
+      "PreRequisteNumber1": "Automata",
+      "PreRequisteNumber2": "Null",
+      "PreRequisteNumber3": "Null"
+    },
+    {
+      "courseName": "is",
+      "courseCode": "is24",
+      "courseHours": 3,
+      "courseLevel": 2,
+      "status": "Not Active",
+      "courseDepartment": "CS",
+      "coursePreRequisteNum1": "Null",
+      "coursePreRequisteNum2": "Null",
+      "coursePreRequisteNum3": "Null",
+      "id": 5
+    },
+    {
+      "courseName": "Machine Learning",
+      "courseCode": "ML123",
+      "courseHours": "3",
+      "courseLevel": "4",
+      "status": "Active",
+      "courseDepartment": "CS",
+      "coursePreRequisteNum1": "Math3",
+      "coursePreRequisteNum2": "Null",
+      "coursePreRequisteNum3": "Null",
+      "id": 6
+    },
+    {
+      "courseName": "Software Engineering",
+      "courseCode": "SWE56",
+      "courseHours": "3",
+      "courseLevel": "3",
+      "status": "Not Active",
+      "courseDepartment": "CS",
+      "coursePreRequisteNum1": "System Analysis",
+      "coursePreRequisteNum2": "Software Development",
+      "coursePreRequisteNum3": "Null",
+      "id": 7
+    }
+  ],
+  "ActiveCourses": [
+    {
+      "courses": [
+        null
+      ],
+      "student_id": 3,
+      "id": 1
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "departmentName": "CS",
+      "departmentCode": "CS12",
+      "levelId": 3,
+      "departmentGpa": "2.7"
+    },
+    {
+      "id": 2,
+      "departmentName": "IS",
+      "departmentCode": "IS45",
+      "levelId": 3,
+      "departmentGpa": 2.1
+    }
+  ],
+  "coursesTest": [
+    {
+      "id": 4,
+      "courseName": "Theary of compution",
+      "courseHours": "3",
+      "courseLevel": "4",
+      "courseCode": "Th121",
+      "status": "Active",
+      "courseDepartment": "CS",
+      "PreRequisteNumber1": "Automata",
+      "PreRequisteNumber2": "Null",
+      "PreRequisteNumber3": "Null"
+    },
+    {
+      "courseName": "Machine Learning",
+      "courseCode": "ML123",
+      "courseHours": "3",
+      "courseLevel": "4",
+      "status": "Active",
+      "courseDepartment": "CS",
+      "coursePreRequisteNum1": "Math3",
+      "coursePreRequisteNum2": "Null",
+      "coursePreRequisteNum3": "Null",
+      "id": 6
+    }
+  ]
+}

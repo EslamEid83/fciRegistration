@@ -1,0 +1,59 @@
+.yourRegisterationTable{
+    width: 100%;
+    // height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: flex-start;
+    font-weight: bold;
+    color: #194668;
+    h1{
+        font-weight: bold;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+        tr:nth-child(even){
+            background-color: #f1f7f8;
+        }
+        th,td{
+            border: 1px solid #a0c8cf;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        th{
+            background-color: #194668;
+            color: #fff;
+        }
+        td{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .icon{
+            width: 2rem;
+            height: 2rem;
+            background-color: white;
+            color: #194668;
+            border-radius: 50%;
+        } 
+    }
+    .saveBtn{
+        display: flex;
+        justify-content: center;
+        button{
+            width: 20%;
+            height: 10vh;
+            background-color: #194668;
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+        }
+    }
+}

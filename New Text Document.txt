@@ -1,0 +1,1 @@
+json-server --watch ./src/pages/data/db.json --port 3004

@@ -1,0 +1,446 @@
+.addAndDeleteAdmin{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    color: #194668;
+    font-weight: bold;
+    // background-color: #194668;
+    h1{
+        font-weight: bold;
+    }
+          .addAdminform{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .addNewAdminDiv{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                label{
+                    width: 75%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                button{
+                    width: 75%;
+                    height: 10vh;
+                    background-color: #194668;
+                    color: white;
+                    border: 0;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #2c2d30;
+                        color: white;
+                    }
+                }
+            }
+            input{
+                width: 75%;
+                height: 8vh;
+                border-radius: 10px;
+                border: none;
+                background-color: #c2c6c7;
+                // background-color: #a0a8ad;
+                padding: 1rem;;
+            }
+        }
+        .users{
+            width: 75%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.3rem;
+            .usersRole{
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .userRole{
+                width: 12%;
+            }
+          }
+    }
+
+    @media screen and (max-width: 320px) {
+        .addAndDeleteAdmin{
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         align-items: center;
+         padding: 1rem;
+         justify-content: center;
+         color: #194668;
+         font-weight: bold;
+    h1{
+        font-weight: bold;
+    }
+          .addAdminform{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .addNewAdminDiv{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                label{
+                    width: 75%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                button{
+                    width: 75%;
+                    height: 10vh;
+                    background-color: #194668;
+                    color: white;
+                    border: 0;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #2c2d30;
+                        color: white;
+                    }
+                }
+            }
+            input{
+                width: 75%;
+                height: 8vh;
+                border-radius: 10px;
+                border: none;
+                background-color: #c2c6c7;
+                padding: 1rem;;
+            }
+        }
+        .users{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1.3rem;
+            .usersRole{
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .userRole{
+                width: 12%;
+            }
+          }
+    }
+      }
+        @media screen and (min-width: 320px) {
+        .addAndDeleteAdmin{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        justify-content: center;
+        color: #194668;
+        font-weight: bold;
+    h1{
+        font-weight: bold;
+    }
+          .addAdminform{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .addNewAdminDiv{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                label{
+                    width: 75%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                button{
+                    width: 75%;
+                    height: 10vh;
+                    background-color: #194668;
+                    color: white;
+                    border: 0;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #2c2d30;
+                        color: white;
+                    }
+                }
+            }
+            input{
+                width: 75%;
+                height: 8vh;
+                border-radius: 10px;
+                border: none;
+                background-color: #c2c6c7;
+                padding: 1rem;;
+            }
+        }
+        .users{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1.3rem;
+            .usersRole{
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .userRole{
+                width: 12%;
+            }
+          }
+    }
+      }
+      @media screen and (min-width: 450px) {
+        .addAndDeleteAdmin{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        justify-content: center;
+        color: #194668;
+        font-weight: bold;
+    h1{
+        font-weight: bold;
+    }
+          .addAdminform{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .addNewAdminDiv{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                label{
+                    width: 75%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                button{
+                    width: 75%;
+                    height: 10vh;
+                    background-color: #194668;
+                    color: white;
+                    border: 0;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #2c2d30;
+                        color: white;
+                    }
+                }
+            }
+            input{
+                width: 75%;
+                height: 8vh;
+                border-radius: 10px;
+                border: none;
+                background-color: #c2c6c7;
+                // background-color: #a0a8ad;
+                padding: 1rem;;
+            }
+        }
+        .users{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1.3rem;
+            .usersRole{
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .userRole{
+                width: 12%;
+            }
+          }
+    }
+      }
+      
+      @media screen and (min-width: 768px) {
+        .addAndDeleteAdmin{
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         align-items: center;
+         padding: 1rem;
+         justify-content: center;
+         color: #194668;
+         font-weight: bold;
+    h1{
+        font-weight: bold;
+    }
+          .addAdminform{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .addNewAdminDiv{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                label{
+                    width: 75%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                button{
+                    width: 75%;
+                    height: 10vh;
+                    background-color: #194668;
+                    color: white;
+                    border: 0;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #2c2d30;
+                        color: white;
+                    }
+                }
+            }
+            input{
+                width: 75%;
+                height: 8vh;
+                border-radius: 10px;
+                border: none;
+                background-color: #c2c6c7;
+                // background-color: #a0a8ad;
+                padding: 1rem;;
+            }
+        }
+        .users{
+            width: 75%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.3rem;
+            .usersRole{
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .userRole{
+                width: 12%;
+            }
+          }
+    }
+      }
+      
+      @media screen and (min-width: 991px) {
+        .addAndDeleteAdmin{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+            justify-content: center;
+            color: #194668;
+            font-weight: bold;
+            // background-color: #194668;
+            h1{
+                font-weight: bold;
+            }
+                  .addAdminform{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .addNewAdminDiv{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        justify-content: center;
+                        align-items: center;
+                        label{
+                            width: 75%;
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                        button{
+                            width: 75%;
+                            height: 10vh;
+                            background-color: #194668;
+                            color: white;
+                            border: 0;
+                            border-radius: 10px;
+                            &:hover{
+                                background-color: #2c2d30;
+                                color: white;
+                            }
+                        }
+                    }
+                    input{
+                        width: 75%;
+                        height: 8vh;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: #c2c6c7;
+                        // background-color: #a0a8ad;
+                        padding: 1rem;;
+                    }
+                }
+                .users{
+                    width: 75%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.3rem;
+                    .usersRole{
+                        width: 33%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+                    .userRole{
+                        width: 12%;
+                    }
+                  }
+            }
+      }
+      
+      @media screen and (min-width: 1200px) {
+        /* font at lg */
+        // html {
+        //   font-size: 16px !important;
+        // }
+      }
