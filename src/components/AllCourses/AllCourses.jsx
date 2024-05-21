@@ -12,7 +12,7 @@ export default function AllCourses(){
   
     async function fetchCourses() {
       try {
-        const { data } = await axios.get("http://localhost:3004/Courses");
+        const { data } = await axios.get("http://localhost:3004/Courses?_sort=courseLevel");
         setCoursesData(data);
       } catch (error) {
         console.error("Error fetching students:", error);
@@ -81,7 +81,7 @@ export default function AllCourses(){
               <td>
                 {editingIndex === index ? (
                   <button
-                    className="btn "
+                    className="btn"
                     onClick={() => {
                       updateCourseActive(course.id, editeActive);
                       setEditingIndex(null);

@@ -5,6 +5,7 @@ import { Field, Form, Formik } from "formik";
 import axios from "axios";
 import Swal from "sweetalert2";
 import addAdminSchma from "../../schemas/addAdminSchema";
+import { toast } from "react-toastify";
 export default function AddAdmin(){
   // const [users,setUsers] =useState()
   const [adminInfo, setAdminInfo] =useState({
@@ -28,44 +29,12 @@ export default function AddAdmin(){
       axios.post("http://localhost:3004/users",newData);
 
       if(newData.role == 'Admin'){
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: `${newData.name} has been added successfully to Admins`,
-          showConfirmButton: false,
-          timer: 1500
-        })
-      } else if(newData.role == 'Teacher'){
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: `${newData.name} has been added successfully to Teachers`,
-          showConfirmButton: false,
-          timer: 1500
-        })
+        toast.success(` ${newData.name} is added successfully to Admins`)
+      } else if(newData.role == 'Doctor'){
+        toast.success(` ${newData.name} is added successfully to Doctors`)
       } else{
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: `${newData.name} has been added successfully to Super Admins`,
-          showConfirmButton: false,
-          timer: 1500
-        })
+        toast.success(` ${newData.name} is added successfully to System Owners`)
       }
-    // newData.role == 'Admin'?
-    // Swal.fire({
-    //   position: "top-end",
-    //   icon: "success",
-    //   title: `${newData.name} has been added successfully to Admins`,
-    //   showConfirmButton: false,
-    //   timer: 1500
-    // }) :Swal.fire({
-    //   position: "top-end",
-    //   icon: "success",
-    //   title: `${newData.name} has been added successfully to Super Admins`,
-    //   showConfirmButton: false,
-    //   timer: 1500
-    // });
   }
     return(
         <>
@@ -94,10 +63,10 @@ export default function AddAdmin(){
                       <Field type="text" id="adminUserName" name="username" placeholder="Enter admin's username..."/>
 
                       <label htmlFor="adminPassword">Enter admin's password</label>
-                      <Field type="text" id="adminPassword" name="password" placeholder="Enter admin's password..."/>
+                      <Field type="password" id="adminPassword" name="password" placeholder="Enter admin's password..."/>
 
                       <label htmlFor="confirm_password">Confirm Password</label>
-                      <Field type="text" id="confirm_password" name="confirm_password" placeholder="Confirm Password..."/>
+                      <Field type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password..."/>
 
                       <div className=" users">
                         <div className="usersRole">

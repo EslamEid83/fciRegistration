@@ -4,12 +4,22 @@ import "./RegisterationTable.scss";
 import axios from 'axios';
 import { useRecoilState } from 'recoil';
 import { $authAtom } from '../../store';
+import { toast } from 'react-toastify';
 export default function RegisterationTable(){
   const [courses, setCourses] = useState([]);
+  const [std, setStd] = useState();
   const [ authData , setAuthData,userData ] = useRecoilState($authAtom);
 
   useEffect(() => {
-    fetch(`http://localhost:3004/Courses?courseLevel=${authData.user.levelId}`)
+    fetch(`http://localhost:3004/users/1`)
+      .then(response => response.json())
+      .then(data => setStd(data))
+    //   .catch(error => console.error('std', error));
+  }, []);
+//   console.log(std);
+//   console.log(authData.user);
+  useEffect(() => {
+    fetch(`http://localhost:3004/Courses?courseLevel=${authData.user.levelId}&courseDepartment=${authData.user.department}`)
       .then(response => response.json())
       .then(data => setCourses(data))
       .catch(error => console.error('http://localhost:3004/Courses', error));
@@ -25,18 +35,20 @@ async function addCourse(courseInfo ,index){
         }
       }
     );
-    console.log(res);
+    // console.log(res);
     
     }
     catch(error){
-        console.log(error);
+        // console.log(error);
     }
     document.getElementById(index).disabled = true;
+    toast.success(` ${courseInfo.courseName} is added successfully`)
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   async function deleteCourse(id ,indexx){
     const res= await axios.delete(`http://localhost:3004/coursesTest/${id}`);
     document.getElementById(indexx).disabled = false;
+    toast.success(` Deleted successfully`);
 }
 
   return (

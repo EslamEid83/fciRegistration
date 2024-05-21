@@ -57,7 +57,7 @@ export default function LoginPage() {
       </div>
       <div className="col-12 inputField">
          <label className="col-12">Password</label>
-         <Field type="text" className="col-12" id="adminPassword" name="password" placeholder="Enter admin's password..."/>
+         <Field type="password" className="col-12" id="adminPassword" name="password" placeholder="Enter admin's password..."/>
       </div>
       <button className=" col-12 loginBtn" type="submit">Login</button>
       </Form>
